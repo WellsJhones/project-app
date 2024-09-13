@@ -47,7 +47,7 @@ This Weather Search App allows users to search for weather information by enteri
 - **`handleKeyPress`**: Triggers the search function when the Enter key is pressed.
 - **`search`**: Function to fetch and display weather data based on the input city name.
 
-Here's a README text for your weather search app:
+
 
 ---
 
