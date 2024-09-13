@@ -1,5 +1,8 @@
 # Weather Search App
 
+![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/e636ce14-64e7-4099-b1d0-9f4d838cdc43)
+
+
 This Weather Search App allows users to search for weather information by entering a city name. The app displays the current temperature, location, humidity, and wind speed.
 
 ## Features
