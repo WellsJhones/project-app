@@ -79,15 +79,22 @@ const Weather = () => {
   useEffect(() => {
     search("Brasilia")
   }, [])
+
   const getBackgroundImage = (temperature) => {
   return temperature > 15 ? hot : cold;
 };
+
+const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      search(inputRef.current.value);
+    }
+  };
 
   return (
             <div className="weather" style={{ backgroundImage: `url(${weatherData ? getBackgroundImage(weatherData.temperature) : ''})` }}>
 
        <div className="search-bar">
-            <input ref={inputRef} type="text" placeholder="Search..." />
+            <input ref={inputRef} type="text" placeholder="Search..." onKeyPress={handleKeyPress} />
             <img src={searchImg} alt=""  onClick={()=> search(inputRef.current.value)}/>
         </div>
         {weatherData?<>
